@@ -1,32 +1,38 @@
 # Oracle Procurement & Invoice Management System
 
-> **Portfolio status:** Database foundation completed · PL/SQL business logic pending
+> **Oracle ERP / SQL Portfolio Project**
 
-An Oracle SQL portfolio project modeling a procurement-to-payment business flow from requisition through supplier payment.
+A database-driven portfolio project that models a procurement-to-payment business flow and demonstrates Oracle SQL, relational database design, procurement concepts, Accounts Payable concepts, and 3-way invoice matching.
 
 ## Business Flow
 
-`Requisition → Approval → Purchase Order → Receipt → Supplier Invoice → Validation → Payment → Audit History`
+`Purchase Requisition → Approval → Purchase Order → Receipt → Supplier Invoice → 3-Way Match → Validation → Payment → Audit History`
 
-## Current Implementation
+## Key Areas
 
-### Database foundation
-- Oracle relational table design for procurement, suppliers, items, employees, invoices, receipts and payments
+- Procurement process modeling
+- Supplier and supplier-site management
+- Requisition and requisition-line structures
+- Purchase orders and PO lines
+- Receipts and receipt lines
+- Supplier invoices and invoice lines
+- 3-way matching concepts
+- Invoice validation
+- Payment processing
+- Approval history
+- Audit history
+
+## Database Foundation
+
+- Oracle Database
+- Relational table design
+- Primary and foreign keys
 - Header/line transaction structures
-- Primary-key and foreign-key relationships
-- Supplier and supplier-site master data
-- Approval-history and audit-history structures
-- Sample master and transaction data
-- Verification queries for document/header and line-level amounts
+- Master and transaction data
+- Verification queries
+- Enterprise-style SQL development
 
-### Documentation
-- Database design
-- Business process
-- Architecture
-- SQL review and development corrections
-- Project status and implementation boundary
-
-## Repository Structure
+## Project Structure
 
 ```text
 database/
@@ -49,28 +55,22 @@ legacy/
 
 ## Implementation Boundary
 
-This repository currently demonstrates the **Oracle database foundation** of the project. PL/SQL procedures, functions, packages, automated business-rule validation, and end-to-end transaction processing are **not yet presented as completed**.
+The repository currently demonstrates the **Oracle database foundation** of the project. PL/SQL procedures, functions, packages, automated business-rule validation, and end-to-end transaction processing are not presented as completed where the available project resources do not support that claim.
 
-The next implementation phase is planned around:
-- Requisition validation and approval processing
-- Purchase-order validation
-- Receipt processing
-- Invoice validation and 3-way-match rules
-- Payment processing
-- Exception handling and transaction control
-
-## Technical Stack
+## Technical Focus
 
 - Oracle Database
-- SQL / relational database design
-- PL/SQL — next implementation phase
+- SQL
+- Relational database design
+- Procurement process concepts
+- Accounts Payable concepts
+- 3-way matching
+- PL/SQL learning and development
 - Git / GitHub
 
-## Portfolio Note
+## Portfolio Position
 
-This is a learning and portfolio project intended to demonstrate Oracle SQL, relational modeling, procurement-process understanding, and progressive PL/SQL development. It is not an Oracle-certified product or a production deployment.
+This is a learning and portfolio project designed to demonstrate practical Oracle SQL, enterprise-style relational modeling, and Oracle ERP procurement/AP process understanding.
 
-## Author
-
-**Baskar R**  
-Aspiring Oracle ERP / SQL / PL/SQL professional
+**Author:** Baskar R  
+**Career focus:** Oracle ERP Finance / SQL / PL/SQL
